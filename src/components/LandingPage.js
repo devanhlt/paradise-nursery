@@ -17,8 +17,13 @@ const LandingPage = () => {
           <h1 className="text-4xl font-bold text-green-800 mb-6">
             Welcome to Paradise Nursery
           </h1>
-          <p className="text-xl text-gray-600 mb-8">
-            Discover our collection of beautiful plants for your home and garden
+          <p className="text-xl text-gray-600 mb-8 w-full md:w-6/12 mx-auto">
+            Experience Paradise Nursery's premium selection of plants, where
+            beauty and quality meet to transform your home and garden into a
+            personal oasis. Discover our vast collection of indoor and outdoor
+            plants, carefully curated by our expert horticulturists. From
+            vibrant flowering plants to lush greenery, we offer everything you
+            need to create your own slice of paradise
           </p>
           <Link
             to="/paradise-nursery/products"
