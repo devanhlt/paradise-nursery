@@ -24,7 +24,7 @@ const LandingPage = () => {
             to="/paradise-nursery/products"
             className="bg-green-600 text-white px-8 py-3 rounded-lg text-lg hover:bg-green-700 transition-colors"
           >
-            Browse Plants
+            Get Started
           </Link>
         </div>
       </div>

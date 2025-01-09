@@ -7,23 +7,40 @@ const Navbar = () => {
   const itemCount = cartItems.reduce((total, item) => total + item.quantity, 0);
 
   return (
-    <nav className="bg-green-600 text-white p-4">
+    <nav className="bg-green-600 text-white p-4 shadow-md sticky top-0 z-10">
       <div className="container mx-auto flex justify-between items-center">
-        <Link to="/paradise-nursery" className="text-2xl font-bold">
+        {/* Logo */}
+        <Link
+          to="/paradise-nursery"
+          className="text-2xl font-bold hover:text-green-200 transition"
+        >
           Paradise Nursery
         </Link>
-        <div className="flex gap-6">
-          <Link to="/paradise-nursery" className="hover:text-green-200">
+        {/* Navigation Links */}
+        <div className="flex gap-6 text-lg">
+          <Link
+            to="/paradise-nursery"
+            className="hover:text-green-200 transition"
+          >
             Home
           </Link>
           <Link
             to="/paradise-nursery/products"
-            className="hover:text-green-200"
+            className="hover:text-green-200 transition"
           >
             Products
           </Link>
-          <Link to="/paradise-nursery/cart" className="hover:text-green-200">
-            Cart ({itemCount})
+          <Link
+            to="/paradise-nursery/cart"
+            className="hover:text-green-200 transition flex items-center gap-1"
+          >
+            <span>Cart</span>
+            <span
+              className="bg-white text-green-600 px-2 py-1 rounded-full text-sm font-bold"
+              aria-label={`Cart contains ${itemCount} items`}
+            >
+              {itemCount}
+            </span>
           </Link>
         </div>
       </div>
